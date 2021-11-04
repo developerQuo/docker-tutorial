@@ -23,6 +23,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
+      - cmd: buildx create --use # start buildkit
+
       - name: Cache Docker layers
         uses: actions/cache@v2
         with:
